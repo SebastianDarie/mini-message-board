@@ -1,0 +1,8 @@
+extends layout
+
+block content 
+    form(method='POST' action='/new')
+      h1 New message
+      input#author(type='text' name='author' placeholder='Name' required='')
+      input#message(type='text' name='message' placeholder='Enter a message' required='')
+      input(type='submit' value='Submit')
